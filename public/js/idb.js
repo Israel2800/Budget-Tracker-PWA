@@ -21,9 +21,9 @@ request.onsuccess = function(event) {
    // When db is successfully created with its object store or simply established a connection, save reference to db in global variable
    db = event.target.result;
 
-   // Check if app is online, if yes run uploadTransaction() function to send all local db data to api
+   // Check if app is online running the 'uploadTransaction function'
    if (navigator.onLine) {
-       // uploadTransaction();
+       uploadTransaction();
    } 
 };
 
